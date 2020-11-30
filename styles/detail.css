@@ -1,4 +1,9 @@
+  
 #card{
     width: 500px;
     height: 500px;
+    
+}
+.container{
+    margin: 2% 4% 0% 4%;
 }

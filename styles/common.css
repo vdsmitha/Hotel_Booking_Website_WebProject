@@ -6,3 +6,10 @@
     width:22px;
     height:20px;
 }
+body{
+    margin: 0;
+    background-color: #e0e0e0;
+}
+header,footer{
+    background-color:rosybrown ;
+}
