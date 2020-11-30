@@ -3,9 +3,7 @@
     height: 150px;
     border-radius: 25%;
     box-shadow: 10px 10px 10px grey;
-    
 }
-
 #city{
     display: flex;
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
@@ -15,10 +13,8 @@
     height: 380px;
     justify-content: center;
     align-items: center;
-    
 }
 #city input{
-
     background-color: #f1f1f1;
     border:1px solid transparent;
     padding-left: 10px;
@@ -28,22 +24,19 @@
 input[type="text"]:focus{
     outline: none;
 }
-
 .flex1{
     display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    margin:50px 0px;
-    
 }
-
 #view{
     margin-bottom: 90px;
     padding-bottom: 30px;
     text-align: center;
-   
 }
 .background{
     background-color:#f1f1f1 ;
-    
 }
+
+  

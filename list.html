@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="scripts/list.js"></script>
     </head>
     <body style="background-color:#e0e0e0;font-family: 'Ubuntu',sans-serif;">
@@ -18,10 +19,8 @@
                 <div class="col-sm-4"><img class="logo" src="assests/images/logo.png" alt="logo"></div>
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#myModal">
-                        LOGIN
-                    </button>
-                    </div>
+                    <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#myModal">LOGIN</button>
+                </div>
             </div>
             <div class="row" id="view">
                 <div class="col-sm-6">
@@ -30,54 +29,66 @@
                 <div class="col-sm-6">
                     <a href="#" id="mapp" class="btn btn-outline-primary" onclick="mapView()" role="button">Map View</a>     
                 </div>    
-            
             </div>
-            
-            <div class="container-fluid">
-           <div id="flex1">
-                <div class="card1" id="card">
-                <a href="detail.html" target="_self">
-                    <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-                   
-                        <h3>Radisson Blu Hotel</h3>
-                        <p>5 Star</p>
-                        <p>New Delhi</p>
-                    
-                    </a>
+           <div class="container-fluid">
+                <div id="flex1">
+                    <div class="card1" id="card">
+                        <a href="detail.html" target="_self">
+                            <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                            <h3>Radisson Blu Hotel</h3>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <p>New Delhi</p>
+                        </a>
+                    </div>
+                    <div class="card1" >
+                        <span><img class="image"  src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
+                            <h3>The Lalit New Delhi</h3>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star" id="noRating" aria-hidden="true"></i>
+                            </div>
+                            <p>New Delhi</p>
+                        </span>
+                    </div>
+                    <div class="card1">
+                        <span><img class="image" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
+                            <h3>Taj Palace</h3>
+                            <div class="rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" id="noRating" aria-hidden="true"></i>
+                            </div>
+                            <p>New Delhi</p>
+                        </span>
+                    </div>
                 </div>
-                
-                <div class="card1" >
-                  <span><img class="image"  src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
-                    <h3>The Lalit New Delhi</h3>
-                    <p>4.5 Star</p>
-                    <p>New Delhi</p></span>
-                </div>
-              
-    
-                <div class="card1">
-                    <span><img class="image" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
-                    <h3>Taj Palace</h3>
-                    <p>4.0 Star</p>
-                    <p>New Delhi</p></span>
-                </div>
-            </div>
-              <div id="map">
+                <div id="map">
                     <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
                     <p>MAP VIEW</p>
                 </div>
-        </div>
-            
+            </div>
             <div class="row" id="footer">
                 <div class="col-sm-4">
                     <div><button type="button" class="btn btn-info btn-sm" id="contact">Contact Us</button></div>
                 </div>
                 <div class="col-sm-4" id="copyright">© 2020 ROOM SEARCH PVT. LTD.</div>
-                <div class="col-sm-4" >
-                  <div class="icons"> 
-                 <a href="https://www.facebook.com/" target="_blank"><img class="social" src="assests/images/facebook.png"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img class="social" src="assests/images/instagram.png"></a>
-                    <a href="https://www.twitter.com/" target="_blank"><img class="social" src="assests/images/twitter.png"></a>
-                </div>
+                <div class="col-sm-4">
+                    <div class="icons"> 
+                        <a href="https://www.facebook.com/" target="_blank"><img class="social" src="assests/images/facebook.png"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img class="social" src="assests/images/instagram.png"></a>
+                        <a href="https://www.twitter.com/" target="_blank"><img class="social" src="assests/images/twitter.png"></a>
+                    </div>
                 </div>
             </div>
         </div>

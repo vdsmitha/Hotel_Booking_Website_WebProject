@@ -1,11 +1,10 @@
-#card{
+.carousels{
     width: 500px;
    max-height: 350px;
-   margin: 10px 0px;
-    
-    
+   
+   display: block;
+   margin:10px auto;
 }
-
 .inner{
     display: flex;
     flex-direction: row;
@@ -13,9 +12,8 @@
     border:1px solid black;
     align-items: center;
     margin-top:30px;
-    
 }
-.left{
+#demo{
     display: flex;
     justify-content: center;
     width: 70%;
@@ -23,11 +21,9 @@
 }
 .right{
    width: 30%;
-  
 }
 label{
     text-align: left;
-   
 }
 input[type="text"],[type="number"],[type="date"]{
    width:60%;
@@ -47,4 +43,11 @@ h5{
 }
 .container-fluid{
     margin-bottom:100px;
+}
+.container-fluid h2{
+    margin-top: 30px;
+}
+#arrow{
+    font-size: 55px;
+    color: rosybrown;
 }

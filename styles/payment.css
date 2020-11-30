@@ -19,7 +19,6 @@
     display: flex;
     justify-content: space-evenly;
 }
-
 #pay{
     color: black;
     text-decoration: none;
@@ -28,14 +27,9 @@
     display: flex;
     flex-direction: column;
     margin-top: 60px;
-    
-    
 }
-
 #information p{
     font-family: cursive;
-   
-   
 }
 .address{
     display: flex;
