@@ -1,15 +1,49 @@
 .logo{
     width: 60px;
     height: 60px;
+    vertical-align: middle;
 }
 .social{
     width:22px;
     height:20px;
+   
 }
 body{
     margin: 0;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu',sans-serif;
 }
-header,footer{
+header{
     background-color:rosybrown ;
+    top:0;
+    position: sticky;
+}
+footer{
+    background-color:rosybrown ;
+    bottom:0;
+    position: sticky;
+}
+
+.icons{
+    text-align: right;
+    padding-right: 10px;
+}
+.links {
+    float: right;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+    padding-right: 10px;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+#copyright{
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 5px;
 }
