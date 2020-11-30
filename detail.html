@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Detail</title>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="styles/common.css">
         <link rel="stylesheet" type="text/css" href="styles/detail.css">
     </head>
@@ -15,25 +16,29 @@
                 <div class="links"><a href="login.html" target="_self">Login</a></div>
             </header>
             <div class="container">
-                <img id="card" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                <div class="inner">
+                 <div class="left">
+                <img id="card" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></div>
+                <div class="right">
                 <form autocomplete="off" action="payment.html" method="POST" target="_self">
-                    <label for="adults">Adults:</label>
-                        <input type="number" name="adults" min="1"><br>
-                    <label for="name">Name:</label>
-                        <input type="text" name="name" required><br>
-                    <label for="fromdate">From Date:</label>
-                        <input type="date" name="fromdate" required><br>
-                    <label for="todate">To Date:</label>
-                        <input type="date" name="todate" required><br>
-                    <label for="total">Total:</label>
-                        <input type="text" name="total" disabled><br>
+                    <label for="adults">Adults:&nbsp;&nbsp;</label>
+                        <input type="number" name="adults" min="1"><br><br><br>
+                    <label for="name">Name:&nbsp;&nbsp; </label>
+                        <input type="text" name="name" required><br><br><br>
+                    <label for="fromdate">From Date:&nbsp;&nbsp;</label>
+                        <input type="date" name="fromdate" required><br><br><br>
+                    <label for="todate">To Date:&nbsp;&nbsp;</label>
+                        <input type="date" name="todate" required><br><br><br>
+                    <label for="total">Total:&nbsp;&nbsp; </label>
+                        <input type="text" name="total" disabled><br><br><br>
                     <input type="submit" value="Book Now">      
                 </form>
-                
+                </div>
+                </div>
                 <h2>Radisson Blu Hotel</h2>
-                <p>RATING</p>
+                <h5>RATING</h5>
                 <p>5 Star</p>
-                <p>AMENITIES</p>
+                <h5>AMENITIES</h5>
                 <ul>
                     <li>Room Service</li>
                     <li>Restaurant</li>
@@ -42,18 +47,16 @@
                     <li>Pool</li>
                 </ul>
                 <h5>DESCRIPTION</h5>
-                <p>Dummy text</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim nisi a nisl tempus, in scelerisque lorem efficitur. Donec imperdiet, nunc sed interdum congue, elit purus lacinia est, venenatis porttitor dui sapien at ligula. </p>
             </div>
             <footer>
-                <div class="contact">
-                    <a href="contact.html" target="_self">Contact Us</a>
-                </div>
+                <a href="contact.html" target="_self" class="contact">Contact Us</a>
+                <div id="copyright">© 2020 ROOM SEARCH PVT. LTD.</div>
                 <div class="icons">
                     <a href="https://www.facebook.com/" target="_blank"><img class="social" src="assests/images/facebook.png"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img class="social" src="assests/images/instagram.png"></a>
                     <a href="https://www.twitter.com/" target="_blank"><img class="social" src="assests/images/twitter.png"></a>
                 </div>
-                <div id="copyright">© 2020 ROOM SEARCH PVT. LTD.</div>
             </footer>
         </div>
     </body>

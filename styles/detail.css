@@ -1,9 +1,47 @@
-  
 #card{
     width: 500px;
-    height: 500px;
+   max-height: 350px;
+   margin: 10px 0px;
+    
     
 }
 .container{
-    margin: 2% 4% 0% 4%;
+    margin: 2% 2% 0%;
+}
+.inner{
+    display: flex;
+    flex-direction: row;
+    max-height: 400px;
+    border:1px solid black;
+    align-items: center;
+    
+}
+.left{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    border-right: 1px solid black;
+}
+.right{
+   width: 25%;
+}
+label{
+    text-align: left;
+   
+}
+input[type="text"],[type="number"],[type="date"]{
+   width:60%;
+    float:right;
+}
+input[type="submit"]{
+    height: 40px;
+    margin:0 auto;
+    display:block;
+}
+form{
+    padding:0px 20px;
+}
+h5{
+    font-family: cursive;
+    font-weight: bold;
 }
