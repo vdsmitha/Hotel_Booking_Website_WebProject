@@ -4,30 +4,49 @@
     float: left;
     padding-right:30px
 }
-.card{
+.card1{
     background-color:lightgray;
     width: 40%;
-    margin: 0px 70px 50px;
     display: inline-block;
-}
-.card a{
-    text-decoration: none;
-    color: black;
-}
-.list ul a{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding:20px;
+    margin: 0px 70px 50px;
     
-   
 }
-.list ul{
-    list-style-type: none;
-    text-align: center;
 
+.card1 a{
+    text-decoration: none;
+    color: black;
 }
-.list ul li{
-    display: inline;
+#list{
+    float:right;
+    color: black;
+}
+#mapp{
+    border:none;
+    color: black;
+}
+
+#view{
+    margin:20px 0px;
+}
+#flex1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   margin-bottom:100px;
+}
+.card1:hover{
+    background-color: rosybrown;
     
+}
+.card1 a:hover{
+    text-decoration: none;
+    color:black;
+}
+#map{
+   
+    display: none;
+}
+.card1 h3{
+    margin-top: 30px;
 }

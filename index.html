@@ -7,41 +7,59 @@
         <link rel="stylesheet" type="text/css" href="styles/common.css">
         <link rel="stylesheet" type="text/css" href="styles/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
     </head>
-    <body>
-        <div>
-            <header>
-                <img class="logo" src="assests/images/logo.png" alt="logo">
-                <div class="links"><a href="login.html" target="_self">Login</a></div>
-            </header>
-            
-            
-                <div id="city">
+    <body style="background-color:#e0e0e0;font-family: 'Ubuntu',sans-serif;">
+        <div class="container-fluid">
+           <div id="header" class="row">
+                <div class="col-sm-4"><img class="logo" src="assests/images/logo.png" alt="logo"></div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#myModal">
+                        LOGIN
+                    </button>
+                    
+
+                </div>
+                
+            </div>
+                <div class="row">
+              <div class="col-sm-12" id="city">
                     <input type="text" placeholder="City" name="city">
                 </div>
-                <div class="images">
+                </div>
+                <div class="flex1">
+                
                         
-                        <a href="list.html" target="_self">
-                        <img class="cards" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"></a>
-                        <img class="cards" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
-                        <img class="cards" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-                        <img class="cards" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
-                        <br>
+                        <div><a href="list.html" target="_self">
+                        <img class="cards" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"></a></div>
+                        <div><img class="cards" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"></div>
+                        <div><img class="cards" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"></div>
+                        <div><img class="cards" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"></div>
                 </div>
-                <div class="view">
-                    <a href="#" target="_self" style="text-align: center;">View more>></a>
+                <div class="row" >
+                <div class="col-12" id="view"><a href="#" role="button" class="btn btn-secondary">View more>></a></div>
                 </div>
-             
             
-            <footer>
-                <a href="contact.html" target="_self" class="contact">Contact Us</a>
-                <div id="copyright">© 2020 ROOM SEARCH PVT. LTD.</div>
-                <div class="icons">
-                    <a href="https://www.facebook.com/" target="_blank"><img class="social" src="assests/images/facebook.png"></a>
+            
+            <div class="row" id="footer">
+                <div class="col-sm-4">
+                    <div><button type="button" class="btn btn-info btn-sm" id="contact">Contact Us</button></div>
+                </div>
+                <div class="col-sm-4" id="copyright">© 2020 ROOM SEARCH PVT. LTD.</div>
+                <div class="col-sm-4" >
+                  <div class="icons"> 
+                 <a href="https://www.facebook.com/" target="_blank"><img class="social" src="assests/images/facebook.png"></a>
                     <a href="https://www.instagram.com/" target="_blank"><img class="social" src="assests/images/instagram.png"></a>
                     <a href="https://www.twitter.com/" target="_blank"><img class="social" src="assests/images/twitter.png"></a>
                 </div>
-            </footer>
+                </div>
+            </div>
+        </div>
         </div>
     </body>
 </html>
