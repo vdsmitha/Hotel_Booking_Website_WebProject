@@ -30,6 +30,7 @@
 }
 #information p{
     font-family: cursive;
+    padding: 5px;
 }
 .address{
     display: flex;
