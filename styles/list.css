@@ -50,7 +50,7 @@
 }
 #noRating{
     color:black;
-    .container-fluid{
-        margin-top: 100px;
-    }
+}
+ .container-fluid{
+    margin-top: 100px;
 }
