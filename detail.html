@@ -11,6 +11,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="scripts/detail.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
+        
+        
     </head>
     <body style="background-color:#e0e0e0;font-family: 'Ubuntu',sans-serif;">
         <div class="container-fluid">
@@ -18,9 +22,36 @@
                 <div class="col-sm-4"><img class="logo" src="assests/images/logo.png" alt="logo"></div>
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4">
-                    <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#myModal">
-                        LOGIN
-                    </button>
+                    <div class="container" >
+                    <button type="button" class="btn btn-default btn-sm" id="login" data-toggle="modal" data-target="#example-modal">LOGIN</button>
+
+                    <div class="modal" id="example-modal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                  <div class="modal-header">
+                              <h4 class="modal-title">Please Login</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                        <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+                        </div>
+                        <div class="form-group">
+                        <label for="input-password">Password:</label>
+                        <input type="password" class="form-control" id="input-password" placeholder="Enter Password">
+                        </div>
+                </form>
+                         </div>
+                            <div class="modal-footer">
+                                <button type="submit" id="singIn" class="btn btn-primary">Sign In</button>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+                </div>
                 </div>
             </div>
             <div class="container-fluid">
@@ -47,15 +78,15 @@
                     <div class="right">
                         <form autocomplete="off" action="payment.html" method="GET" target="_self">
                             <label for="adults">Adults:&nbsp;&nbsp;</label>
-                                <input type="number" name="adults" min="1"><br><br>
+                                <input type="number" name="adults" id="adults" min="1" onchange="calculate()"><br><br>
                              <label for="name">Name:&nbsp;&nbsp; </label>
-                                <input type="text" name="name" required><br><br>
+                                <input type="text" name="name" id="name" required><br><br>
                             <label for="fromdate">From Date:&nbsp;&nbsp;</label>
-                                <input type="date" name="fromdate" required><br><br>
+                                <input type="date" name="fromdate" id="fromdate" required onchange="calculate()"><br><br>
                             <label for="todate">To Date:&nbsp;&nbsp;</label>
-                                <input type="date" name="todate" required><br><br>
+                                <input type="date" name="todate" id="todate" required onchange="calculate()"><br><br>
                             <label for="total">Total:&nbsp;&nbsp; </label>
-                                <input type="text" name="total" disabled><br><br>
+                                <input type="text" name="total" id="total" readonly><br><br>
                             <input type="submit" value="Book Now" class="btn btn-outline-success" id="book">      
                         </form>
                     </div>
@@ -80,8 +111,31 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignissim nisi a nisl tempus, in scelerisque lorem efficitur. Donec imperdiet, nunc sed interdum congue, elit purus lacinia est, venenatis porttitor dui sapien at ligula. </p>
             </div>
             <div class="row" id="footer">
-                <div class="col-sm-4">
-                    <div><button type="button" class="btn btn-info btn-sm" id="contact">Contact Us</button></div>
+                <div class="col-md-4">
+                    <div class="container">
+                        <button type="button" class="btn btn-info btn-sm" id="contact" data-toggle="modal" data-target="#example-modal1">Contact Us</button>
+                        <div class="modal" id="example-modal1">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title">Get in touch</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                <p>Thank you for reaching out!!!</p>
+                                <p>Please enter you email and we will get back to you.</p>
+                                <form>
+                                    <label for="useremail">Email:</label>
+                                    <input type="email" name="useremail" placeholder="Enter your email id" required>
+                                </form>
+                             </div>
+                                <div class="modal-footer">
+                                    <button type="submit" id="singIn" class="btn btn-primary">Sign In</button>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                    </div>
                 </div>
                 <div class="col-sm-4" id="copyright">© 2020 ROOM SEARCH PVT. LTD.</div>
                 <div class="col-sm-4">
